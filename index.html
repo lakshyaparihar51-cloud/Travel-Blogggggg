@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RoamAura | Travel India</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero" id="home">
+    <nav class="nav shell">
+      <a class="brand" href="#home">Roam<span>Aura</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#experiences">Experiences</a></li>
+        <li><a href="#planner">Trip Planner</a></li>
+      </ul>
+      <a href="#planner" class="btn btn-light desktop-cta">Book Now</a>
+    </nav>
+
+    <section class="hero-content shell">
+      <p class="tag">Made for modern travelers</p>
+      <h1>Travel smarter, deeper, and more beautifully.</h1>
+      <p class="sub">
+        Explore India's most stunning escapes with curated routes, local stories,
+        and comfort-first planning.
+      </p>
+      <div class="hero-actions">
+        <a href="#destinations" class="btn btn-primary">Start Exploring</a>
+        <a href="#experiences" class="btn btn-glass">See Experiences</a>
+      </div>
+
+      <form class="search" id="searchForm">
+        <label>
+          Destination Type
+          <select id="tripType" required>
+            <option value="">Choose</option>
+            <option>Mountains</option>
+            <option>Beaches</option>
+            <option>Heritage</option>
+            <option>Adventure</option>
+          </select>
+        </label>
+        <label>
+          Month
+          <input type="month" id="tripMonth" required />
+        </label>
+        <label>
+          Budget
+          <select id="tripBudget" required>
+            <option value="">Select</option>
+            <option>Budget Friendly</option>
+            <option>Mid Range</option>
+            <option>Luxury</option>
+          </select>
+        </label>
+        <button type="submit" class="btn btn-primary">Get Plan</button>
+      </form>
+      <p class="result" id="planResult"></p>
+    </section>
+  </header>
+
+  <main>
+    <section class="section shell" id="destinations">
+      <div class="section-head">
+        <p class="tag dark">Top Destinations</p>
+        <h2>Places that feel like a dream</h2>
+      </div>
+      <div class="grid-cards">
+        <article class="card reveal" style="--img:url('https://images.unsplash.com/photo-1514222134-b57cbb8ce073?auto=format&fit=crop&w=1300&q=80')">
+          <div class="overlay">
+            <h3>Leh Ladakh</h3>
+            <p>Sky roads, monasteries, and cold desert beauty.</p>
+          </div>
+        </article>
+        <article class="card reveal" style="--img:url('https://images.unsplash.com/photo-1582979512210-99b6a53386f9?auto=format&fit=crop&w=1300&q=80')">
+          <div class="overlay">
+            <h3>Jaipur</h3>
+            <p>Royal forts, craft markets, and iconic architecture.</p>
+          </div>
+        </article>
+        <article class="card reveal" style="--img:url('https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1300&q=80')">
+          <div class="overlay">
+            <h3>Goa</h3>
+            <p>Sunset beaches, food trails, and vibrant nightlife.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt" id="experiences">
+      <div class="shell split">
+        <div>
+          <p class="tag dark">Best UX Travel Flow</p>
+          <h2>Why travelers love RoamAura</h2>
+          <ul class="list">
+            <li>Personalized itineraries in seconds</li>
+            <li>Clear budget suggestions and season tips</li>
+            <li>Mobile-first booking experience</li>
+            <li>Local gems, not just tourist spots</li>
+          </ul>
+        </div>
+        <div class="story-card reveal">
+          <h3>Traveler Story</h3>
+          <p id="quote">"Our Himachal trip was perfectly planned with scenic stops and hidden cafes."</p>
+          <span id="author">- Priya, Delhi</span>
+          <div class="story-controls">
+            <button id="prevBtn" aria-label="Previous">←</button>
+            <button id="nextBtn" aria-label="Next">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="planner">
+      <div class="section-head">
+        <p class="tag dark">Easy Planning</p>
+        <h2>Ready for your next adventure?</h2>
+      </div>
+      <div class="cta-box reveal">
+        <h3>Get handpicked recommendations for your next trip</h3>
+        <a href="#home" class="btn btn-primary">Plan Now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell foot-wrap">
+      <p>RoamAura Travel • Designed for exceptional UI/UX</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
